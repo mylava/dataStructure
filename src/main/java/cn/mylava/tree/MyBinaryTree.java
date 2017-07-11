@@ -284,6 +284,11 @@ public class MyBinaryTree<T extends Comparable> {
         return Math.max(left,right)+1;
     }
 
+    /**
+     * 求二叉树的最小深度
+     * @param node
+     * @return
+     */
     public int minDeepth(Node<T> node){
         if (node == null) {
             return 0;
@@ -300,5 +305,6 @@ public class MyBinaryTree<T extends Comparable> {
         }
         return Math.min(getMin(node.getLeft()),getMin(node.getRight()))+1;
     }
+
 }
 
